@@ -31,7 +31,6 @@
       gpu-screen-recorder
       gpu-screen-recorder-gtk
       prismlauncher
-      klavaro
     ];
   };
 }

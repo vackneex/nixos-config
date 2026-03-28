@@ -10,10 +10,6 @@
       input = {
         keyboard = {
           layouts = [
-            {
-              layout = "us";
-              variant = "colemak";
-            }
             { 
               layout = "ru";
             }
