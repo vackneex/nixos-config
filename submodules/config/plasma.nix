@@ -10,6 +10,10 @@
       input = {
         keyboard = {
           layouts = [
+            {
+              layout = "us";
+              variant = "colemak";
+            }
             { 
               layout = "ru";
             }
@@ -23,6 +27,7 @@
           numlockOnStartup = "on";
           options = [
             "grp:alt_shift_toggle"
+            "caps:backspace"
           ];
         };
       };
