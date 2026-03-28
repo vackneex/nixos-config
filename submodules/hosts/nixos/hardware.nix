@@ -71,6 +71,9 @@
 
     hardware.bluetooth.enable = true;
 
+    services.timesyncd.enable = true; # My CMOS died temporarily so this may help
+    networking.timeServers = [ "0.nixos.pool.ntp.org" "1.nixos.pool.ntp.org" ];
+
     services.xserver.videoDrivers = [ "nvidia" ];
   };
 }
