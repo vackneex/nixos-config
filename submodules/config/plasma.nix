@@ -10,15 +10,9 @@
       input = {
         keyboard = {
           layouts = [
-            { 
-              layout = "ru";
-            }
-            {
-              layout = "ua";
-            }
-            {
-              layout = "pl";
-            }
+            { layout = "ru"; }
+            { layout = "ua"; }
+            { layout = "pl"; }
           ];
           numlockOnStartup = "on";
           options = [
