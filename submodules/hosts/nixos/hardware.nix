@@ -69,6 +69,8 @@
       };
     };
 
+    hardware.bluetooth.enable = true;
+
     services.xserver.videoDrivers = [ "nvidia" ];
   };
 }
