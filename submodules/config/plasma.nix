@@ -26,7 +26,7 @@
         {
           alignment = "center";
           floating = true;
-          hiding = "autohide";
+          hiding = "dodgewindows";
           lengthMode = "fit";
           location = "right";
 
