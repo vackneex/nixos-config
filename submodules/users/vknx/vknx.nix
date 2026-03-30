@@ -32,6 +32,7 @@
       gpu-screen-recorder-gtk
       prismlauncher
       vesktop
+      direnv
     ];
   };
 }

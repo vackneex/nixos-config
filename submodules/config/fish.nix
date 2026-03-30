@@ -5,6 +5,7 @@
       enable = true;
       interactiveShellInit = ''
         set -g fish_greeting ""
+        direnv hook fish | source
       '';
       shellAliases = {
         clean-user = "nix-collect-garbage -d";
