@@ -6,6 +6,7 @@
       (self.nixosModules.firefox-config // {_class = null;})
       (self.nixosModules.fish-config // {_class = null;})
       (self.nixosModules.plasma-config // {_class = null;})
+      (self.nixosModules.vscode-config // {_class = null;})
     ];
 
     home.username = "vknx";
