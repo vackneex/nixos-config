@@ -13,6 +13,10 @@
           youtube-recommended-videos
           istilldontcareaboutcookies
         ];
+
+        settings = {
+          "widget.use-xdg-desktop-portal.file-picker" = 1;
+        };
       };
 
       policies = {
@@ -32,6 +36,8 @@
           };
         };
       };
+
+      
 
       nativeMessagingHosts = [ pkgs.kdePackages.plasma-browser-integration ];
     };
