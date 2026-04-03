@@ -32,8 +32,10 @@
       gpu-screen-recorder
       gpu-screen-recorder-gtk
       prismlauncher
+      openjdk25
       vesktop
       direnv
+      blastem
     ];
   };
 }

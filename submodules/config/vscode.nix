@@ -13,6 +13,7 @@
           ms-vscode.cmake-tools
           twxs.cmake
           mkhl.direnv
+          redhat.java
         ];
 
         userSettings = {
