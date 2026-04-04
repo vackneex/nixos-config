@@ -14,6 +14,7 @@
     boot.loader.limine = {
       enable = true;
       secureBoot.enable = true;
+      maxGenerations = 5;
     };
 
     boot.loader.efi.canTouchEfiVariables = true;
