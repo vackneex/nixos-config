@@ -1,4 +1,4 @@
-{ inputs, self, ...}: {
+{ ... }: {
 
   flake.nixosModules.nixos-config-hardware = { config, lib, pkgs, modulesPath, ... }: {
     imports = [
