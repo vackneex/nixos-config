@@ -65,6 +65,7 @@
       p7zip
       btop
       sbctl
+      kdePackages.ktorrent
     ];
 
     fonts.packages = with pkgs; [
