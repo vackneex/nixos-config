@@ -3,9 +3,7 @@
   flake.nixosModules.plasma-config = { ... }: {
     programs.plasma = {
       enable = true;
-      workspace = {
-        lookAndFeel = "org.kde.breezedark.desktop";
-      };
+      workspace.lookAndFeel = "org.kde.breezedark.desktop";
 
       input = {
         keyboard = {
