@@ -1,6 +1,6 @@
 { ... }: {
 
-  flake.nixosModules.nixos-config-hardware = { config, lib, pkgs, modulesPath, ... }: {
+  flake.nixosModules.asus-gl552vw-config-hardware = { config, lib, pkgs, modulesPath, ... }: {
     imports = [
       (modulesPath + "/installer/scan/not-detected.nix")
     ];

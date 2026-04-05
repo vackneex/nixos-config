@@ -38,6 +38,7 @@
       vesktop
       direnv
       blastem
+      ardour
     ];
   };
 }
