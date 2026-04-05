@@ -10,6 +10,7 @@
 
       inputs.disko.nixosModules.disko
       self.nixosModules.shared-disko-config
+      { host-system.os-disk = "/dev/disk/by-id/ata-SAMSUNG_MZNLF128HCHP-00004_S2DNNXAH219864";}
     ];
   };
 

@@ -1,9 +1,18 @@
 { ... }: {
 
-  flake.nixosModules.shared-disko-config = { ... }: {
-    disko.devices = {
-      disk.main = {
-        device = "/dev/disk/by-id/ata-SAMSUNG_MZNLF128HCHP-00004_S2DNNXAH219864";
+  flake.nixosModules.shared-disko-config = { config, lib, ... }:
+  let 
+    cfg = config.host-system;
+  in {
+    options.host-system = {
+      os-disk = lib.mkOption {
+        type = lib.types.str;
+      };
+    };
+
+    config = {
+      disko.devices.disk.main = {
+        device = cfg.os-disk;
         type = "disk";
 
         content = {
