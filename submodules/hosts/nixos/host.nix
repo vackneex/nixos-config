@@ -7,6 +7,9 @@
       self.nixosModules.nixos-hostname
       self.nixosModules.nixos-config-hardware
       self.nixosModules.home-manager
+
+      inputs.disko.nixosModules.disko
+      self.nixosModules.shared-disko-config
     ];
   };
 
