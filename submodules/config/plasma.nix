@@ -7,9 +7,9 @@
 
       input.keyboard = {
         layouts = [
+          { layout = "pl"; }
           { layout = "ru"; }
           { layout = "ua"; }
-          { layout = "pl"; }
         ];
         
         numlockOnStartup = "on";
