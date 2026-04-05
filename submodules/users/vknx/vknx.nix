@@ -19,6 +19,8 @@
 
     home.packages = with pkgs; [
       kdePackages.kate
+      kdePackages.ktorrent
+      kdePackages.filelight
       haruna
       gh
       vscode
