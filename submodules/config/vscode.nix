@@ -1,6 +1,6 @@
 { ... }: {
 
-  flake.nixosModules.vscode-config = { osConfig, pkgs, ... }: {
+  flake.nixosModules.vscode-config = { pkgs, ... }: {
     programs.vscode = {
       enable = true;
       profiles.default = {
