@@ -11,7 +11,7 @@
         kernelModules = [];
       };
 
-      kernelParams = [ "quiet" "nvidia-drm.modeset=1" "nvidia-drm.fbdev=1" ];
+      kernelParams = [ "quiet" "nvidia-drm.modeset=1" "nvidia-drm.fbdev=1" "fsck.mode=force" "fsck.repair=yes" ];
       kernelModules = ["kvm-intel"];
       extraModulePackages = [];
       consoleLogLevel = 3;
@@ -85,9 +85,12 @@
       bluetooth.enable = true;
     };
 
+    powerManagement.cpuFreqGovernor = "performance";
+
     services = {
       xserver.videoDrivers = [ "nvidia" ];
       timesyncd.enable = true; # My CMOS died temporarily so this may help
+      thermald.enable = true;
     };
 
     networking.timeServers = [ "0.nixos.pool.ntp.org" "1.nixos.pool.ntp.org" ];
