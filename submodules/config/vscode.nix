@@ -1,6 +1,6 @@
 { ... }: {
 
-  flake.nixosModules.vscode-config = { pkgs, ... }: {
+  flake.nixosModules.vscode-config = { osConfig, pkgs, ... }: {
     programs.vscode = {
       enable = true;
       profiles.default = {
@@ -33,10 +33,10 @@
 
               "options" = {
                 "nixos" = {
-                  "expr" = "(builtins.getFlake \"\${workspaceFolder}\").nixosConfigurations.nixos.options";
+                  "expr" = "(builtins.getFlake \"\${workspaceFolder}\").nixosConfigurations.asus-gl552vw.options";
                 };
                 "home-manager" = {
-                  "expr" = "(builtins.getFlake \"\${workspaceFolder}\").nixosConfigurations.nixos.options.home-manager.users.value.vknx";
+                  "expr" = "(builtins.getFlake \"\${workspaceFolder}\").nixosConfigurations.asus-gl552vw.options.home-manager.users.value.vknx";
                 };
               };
             };
