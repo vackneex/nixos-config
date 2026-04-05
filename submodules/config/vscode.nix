@@ -33,10 +33,10 @@
 
               "options" = {
                 "nixos" = {
-                  "expr" = "(builtins.getFlake \"\${workspaceFolder}\").nixosConfigurations.asus-gl552vw.options";
+                  "expr" = "(builtins.getFlake \"\${workspaceFolder}\").nixosConfigurations.gl552vw.options";
                 };
                 "home-manager" = {
-                  "expr" = "(builtins.getFlake \"\${workspaceFolder}\").nixosConfigurations.asus-gl552vw.options.home-manager.users.value.vknx";
+                  "expr" = "(builtins.getFlake \"\${workspaceFolder}\").nixosConfigurations.gl552vw.options.home-manager.users.value.vknx";
                 };
               };
             };
