@@ -43,27 +43,14 @@
       };
     };
 
-    fileSystems = {
-      # "/" = {
-      #   device = "/dev/disk/by-uuid/9acae3c1-5e56-4b7c-84ef-f22a21aa284c";
-      #   fsType = "ext4";
-      # };
-
-      # "/boot" = {
-      #   device = "/dev/disk/by-uuid/02FB-4D4F";
-      #   fsType = "vfat";
-      #   options = ["fmask=0077" "dmask=0077"];
-      # };
-
-      "/mnt/data" = {
-        device = "/dev/disk/by-uuid/370b6e40-fd75-b9f6-7bf9-f17c6c1d5f8d";
-        fsType = "btrfs";
-        options = [
-          "defaults"
-          "nofail"
-          "x-systemd.automount"
-        ];
-      };
+    fileSystems."/mnt/data" = {
+      device = "/dev/disk/by-uuid/370b6e40-fd75-b9f6-7bf9-f17c6c1d5f8d";
+      fsType = "btrfs";
+      options = [
+        "defaults"
+        "nofail"
+        "x-systemd.automount"
+      ];
     };
 
     zramSwap.enable = true;
