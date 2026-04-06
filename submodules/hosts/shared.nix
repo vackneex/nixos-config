@@ -77,12 +77,21 @@
         p7zip
         btop
         sbctl
+        protonup-ng
+        mangohud
       ];
 
       fonts.packages = with pkgs; [
         nerd-fonts.lilex
         google-fonts
       ];
+
+      programs.steam = {
+        enable = true;
+        gamescopeSession.enable = true;
+      };
+
+      programs.gamemode.enable = true;
 
       programs.mtr.enable = true;
       programs.gnupg.agent = {
