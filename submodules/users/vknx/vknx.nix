@@ -22,6 +22,7 @@
       kdePackages.kate
       kdePackages.ktorrent
       kdePackages.filelight
+      kdePackages.kolourpaint
       haruna
       gh
       vscode
@@ -40,6 +41,7 @@
       direnv
       blastem
       ardour
+      tetrio-desktop
     ];
   };
 }
