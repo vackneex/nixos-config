@@ -62,6 +62,16 @@
         jack.enable = true;
       };
 
+      virtualisation = {
+        containers.enable = true;
+
+        podman = {
+          enable = true;
+          dockerCompat = true;
+          defaultNetwork.settings.dns_enabled = true;
+        };
+      };
+
       users.users.vknx = {
         isNormalUser = true;
         description = "vackneex";
@@ -79,6 +89,9 @@
         sbctl
         protonup-ng
         mangohud
+        dive
+        podman-tui
+        podman-compose
       ];
 
       fonts.packages = with pkgs; [
